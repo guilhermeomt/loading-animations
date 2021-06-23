@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #76c4c6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dots-loading {
+  width: fit-content;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  animation: rotate 0.5s ease infinite;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
